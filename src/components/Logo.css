@@ -1,0 +1,38 @@
+.logo-container {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* Coding tags < /> */
+.logo-icon {
+  fill: #1D4ED8; /* blue-700 */
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
+.logo-icon-close {
+  fill: #101b3b; /* blue-700 */
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+/* "Inganji" */
+.logo-name-blue {
+  fill: #1D4ED8; /* blue-700 */
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
+/* "Coding Academy" */
+.logo-name-black {
+  fill: #000000;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
+/* Tagline */
+.logo-tagline {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  fill: #374151; /* gray-700 */
+}

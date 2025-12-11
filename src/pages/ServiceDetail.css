@@ -1,0 +1,20 @@
+.service-detail {
+  max-width: 900px;
+  margin: auto;
+  padding: 30px;
+}
+
+.service-detail h1 {
+  color: #0077cc;
+  margin-bottom: 15px;
+}
+
+.service-detail h2 {
+  margin-top: 20px;
+  color: #005fa3;
+}
+
+.service-detail ul {
+  margin-left: 20px;
+  line-height: 1.8;
+}

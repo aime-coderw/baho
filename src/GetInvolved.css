@@ -1,0 +1,90 @@
+.get-involved-container {
+  max-width: 800px;
+  margin: 120px auto 50px;
+  padding: 0 20px;
+  font-family: Arial, sans-serif;
+}
+
+.get-involved-container h1 {
+  text-align: center;
+  color: #0077cc;
+}
+
+.get-involved-container p {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.success-message {
+  text-align: center;
+  background-color: #e0f8e9;
+  color: #0c5228;
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.involved-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.involved-form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  color: #333;
+}
+
+.involved-form label span {
+  color: red;
+  margin-left: 4px;
+}
+
+.involved-form input,
+.involved-form select,
+.involved-form textarea {
+  margin-top: 5px;
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.involved-form input:focus,
+.involved-form select:focus,
+.involved-form textarea:focus {
+  border-color: #0077cc;
+}
+
+.involved-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.involved-form button {
+  background-color: #0077cc;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+.involved-form button:hover {
+  background-color: #005fa3;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .get-involved-container {
+    margin: 100px 15px 30px;
+  }
+}

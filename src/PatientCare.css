@@ -1,0 +1,73 @@
+.patient-care-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 25px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+}
+
+.patient-care-container h1 {
+  text-align: center;
+  color: #0077cc;
+  margin-bottom: 10px;
+}
+
+.patient-care-container p {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.patient-care-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.patient-care-form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+}
+
+.patient-care-form input,
+.patient-care-form select,
+.patient-care-form textarea {
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.patient-care-form input:focus,
+.patient-care-form select:focus,
+.patient-care-form textarea:focus {
+  outline: none;
+  border-color: #0077cc;
+}
+
+.patient-care-form button {
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.patient-care-form button:hover {
+  background-color: #005fa3;
+}
+
+.success-message {
+  background-color: #e6f4ea;
+  color: #047857;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
