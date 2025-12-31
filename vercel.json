@@ -1,15 +1,8 @@
 {
   "version": 2,
-  "builds": [
-    { "src": "src/**/*.{js,jsx}", "use": "@vercel/static-build" },
-    { "src": "api/**/*.js", "use": "@vercel/node" }
-  ],
   "functions": {
     "api/chat.js": {
-      "runtime": "vercel-node@20.x"
+      "runtime": "vercel-node@20.2.0"
     }
-  },
-  "routes": [
-    { "src": "/api/(.*)", "dest": "/api/$1.js" }
-  ]
+  }
 }
