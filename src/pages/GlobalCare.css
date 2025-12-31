@@ -1,0 +1,203 @@
+.globalcare-container {
+  font-family: system-ui, sans-serif;
+  color: #0a0e1a;
+  background: #f7fcf9;
+}
+
+/* ===========================
+   HERO SECTION
+=========================== */
+.globalcare-hero {
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.hero-overlay {
+  background-color: rgba(0,0,0,0.5);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-text {
+  max-width: 650px;
+  color: #fff;
+  text-align: center;
+}
+.hero-text h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+.hero-text p {
+  margin: 15px 0;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.primary-btn {
+  background: #0a6f43;
+  color: #fff;
+  padding: 12px 22px;
+  border-radius: 8px;
+  font-weight: 600;
+  display: inline-block;
+  text-decoration: none;
+}
+.primary-btn:hover {
+  background: #075731;
+}
+
+/* ===========================
+   SERVICES SECTION
+=========================== */
+.globalcare-services h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin: 50px 0 20px;
+  color: #0a6f43;
+}
+
+.service-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  padding: 20px;
+}
+
+.service-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: left;
+  border: 1px solid #e1ebe5;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+  transition: 0.3s;
+}
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 26px rgba(0,0,0,0.12);
+}
+.service-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.service-card h3 {
+  color: #0a6f43;
+}
+
+/* Inline Button */
+.link-btn {
+  display: inline-block;
+  margin-top: 12px;
+  color: #0a6f43;
+  font-weight: 600;
+  text-decoration: none;
+}
+.link-btn:hover {
+  text-decoration: underline;
+}
+
+/* ===========================
+   HOW IT WORKS STEPS
+=========================== */
+.globalcare-steps {
+  background: #eef8f3;
+  padding: 50px 20px;
+  margin-top: 50px;
+  border-radius: 10px;
+}
+.globalcare-steps h2 {
+  text-align: center;
+  margin-bottom: 35px;
+  color: #0a6f43;
+}
+.step-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 25px;
+}
+.step-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 4px solid #0a6f43;
+  box-shadow: 0 3px 16px rgba(0,0,0,0.06);
+}
+.step-card span {
+  width: 38px;
+  height: 38px;
+  background: #0a6f43;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: auto;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* ===========================
+   CTA SECTION (FIXED & RESPONSIVE)
+=========================== */
+.globalcare-cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 65px 20px;
+  background: #0a6f43;
+  color: #fff;
+  margin: 50px 20px;
+  border-radius: 12px;
+  text-align: left;
+  flex-wrap: wrap; /* Keeps it mobile friendly */
+}
+
+.globalcare-cta .cta-image img {
+  max-width: 350px;
+  width: 100%;
+  border-radius: 12px;
+  border: 3px solid #ffffff2a;
+}
+
+.globalcare-cta h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.globalcare-cta p {
+  margin-bottom: 20px;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.globalcare-cta .btn {
+  background: #fff;
+  color: #0a6f43;
+  padding: 12px 22px;
+  border-radius: 8px;
+  font-weight: 600;
+  display: inline-block;
+}
+.globalcare-cta .btn:hover {
+  background: #d8ecdf;
+}
+
+/* ===========================
+   RESPONSIVE IMPROVEMENTS
+=========================== */
+@media (max-width: 900px) {
+  .hero-text h1 { font-size: 2.2rem; }
+}
+
+@media (max-width: 768px) {
+  .globalcare-cta {
+    text-align: center;
+  }
+  .globalcare-cta .cta-image img {
+    max-width: 260px;
+  }
+}

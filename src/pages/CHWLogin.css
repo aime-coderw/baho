@@ -1,0 +1,48 @@
+.chw-login-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #f9fefe;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+}
+
+.chw-login-container h2 {
+  text-align: center;
+  color: #114618;
+  margin-bottom: 20px;
+}
+
+.chw-login-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.chw-login-container input {
+  padding: 12px 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.chw-login-container button {
+  padding: 12px;
+  font-size: 16px;
+  background-color: #114618;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.chw-login-container button:hover {
+  background-color: #114618;
+}
+
+.error-msg {
+  color: red;
+  text-align: center;
+  margin-top: 10px;
+}

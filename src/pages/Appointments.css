@@ -1,0 +1,138 @@
+.appointments-page {
+  font-family: system-ui, sans-serif;
+  color: #0a0e1a;
+  background: #f7fcf9;
+  padding-bottom: 50px;
+}
+
+/* Hero */
+.appointments-hero {
+  background-color: #0a6f43;
+  color: #fff;
+  padding: 80px 20px;
+  text-align: center;
+  border-radius: 12px;
+  margin: 20px;
+}
+.appointments-hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+}
+.appointments-hero p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: auto;
+}
+
+/* Form Section */
+.appointments-form-section {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+}
+.appointments-form {
+  background: #fff;
+  border-radius: 12px;
+  padding: 30px 25px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+.appointments-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #0a6f43;
+}
+.appointments-form input,
+.appointments-form select,
+.appointments-form textarea {
+  width: 100%;
+  padding: 10px 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #d1e6d1;
+  font-size: 1rem;
+}
+
+.appointments-form textarea {
+  resize: none;
+}
+
+.btn.whatsapp-btn {
+  background-color: #25D366;
+  color: #fff;
+  font-weight: 600;
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s;
+}
+
+.btn.whatsapp-btn:hover {
+  background-color: #20b758;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .appointments-hero h1 {
+    font-size: 2.2rem;
+  }
+  .appointments-hero p {
+    font-size: 1rem;
+  }
+}
+/* FAQ */
+.appointments-faq {
+  margin: 40px 20px;
+  background: #e8f4eb;
+  border-radius: 12px;
+  padding: 30px 20px;
+}
+.appointments-faq h2 {
+  text-align: center;
+  color: #0a6f43;
+  margin-bottom: 15px;
+}
+.appointments-faq ul {
+  max-width: 700px;
+  margin: auto;
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+/* TESTIMONIALS */
+.appointments-testimonials {
+  margin: 50px 20px;
+}
+.appointments-testimonials h2 {
+  text-align: center;
+  color: #0a6f43;
+  margin-bottom: 30px;
+}
+.testimonial-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+.testimonial-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+.testimonial-card span {
+  display: block;
+  margin-top: 10px;
+  font-weight: 600;
+  color: #0a6f43;
+}
+
+/* Responsive */
+@media(max-width: 768px) {
+  .service-cards, .testimonial-cards {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,145 @@
+/* DoctorsPortal.css */
+
+/* Container Specific */
+.doctor-login,
+.doctor-dashboard {
+  max-width: 100%;
+  margin: 40px auto;
+  padding: 30px 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #1f2937;
+}
+
+/* Headings inside container only */
+.doctor-login h2,
+.doctor-login h3,
+.doctor-dashboard h2,
+.doctor-dashboard h3 {
+  color: #111827;
+  margin-bottom: 20px;
+}
+
+/* Forms inside container */
+.doctor-login form,
+.doctor-dashboard form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.doctor-login input,
+.doctor-login select,
+.doctor-login button,
+.doctor-dashboard input,
+.doctor-dashboard select,
+.doctor-dashboard button {
+  padding: 10px 15px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  font-size: 16px;
+}
+
+.doctor-login input:focus,
+.doctor-login select:focus,
+.doctor-dashboard input:focus,
+.doctor-dashboard select:focus {
+  outline: none;
+  border-color: #10b981; /* green accent for focus */
+  box-shadow: 0 0 0 2px rgba(16,185,129,0.2);
+}
+
+/* Buttons */
+.doctor-login button,
+.doctor-dashboard button {
+  background-color: #10b981;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  border: none;
+}
+
+.doctor-login button:disabled,
+.doctor-dashboard button:disabled {
+  background-color: #6ee7b7;
+  cursor: not-allowed;
+}
+
+.doctor-login button:hover:not(:disabled),
+.doctor-dashboard button:hover:not(:disabled) {
+  background-color: #059669;
+}
+
+/* Error message only in this container */
+.doctor-login p,
+.doctor-dashboard p {
+  color: #dc2626;
+  margin-top: 10px;
+}
+
+/* Table scoped inside dashboard */
+.doctor-dashboard table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.doctor-dashboard table th,
+.doctor-dashboard table td {
+  border: 1px solid #d1d5db;
+  padding: 10px;
+  text-align: left;
+}
+
+.doctor-dashboard table th {
+  background-color: #f3f4f6;
+  font-weight: 600;
+}
+
+.doctor-dashboard table tr:nth-child(even) {
+  background-color: #f9fafb;
+}
+
+/* WhatsApp button links only inside dashboard */
+.doctor-dashboard a {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 6px;
+  background-color: #25d366;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+.doctor-dashboard a:hover {
+  background-color: #128c7e;
+}
+
+/* Responsive inside these containers */
+@media (max-width: 640px) {
+  .doctor-login,
+  .doctor-dashboard {
+    margin: 20px;
+    padding: 20px 15px;
+  }
+
+  .doctor-dashboard table th,
+  .doctor-dashboard table td {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .doctor-login input,
+  .doctor-login select,
+  .doctor-login button,
+  .doctor-dashboard input,
+  .doctor-dashboard select,
+  .doctor-dashboard button {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+}

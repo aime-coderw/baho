@@ -1,0 +1,79 @@
+/* RegisterCHW.css */
+
+.register-chw-container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 40px;
+  background-color: #f9fefe;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+}
+
+.register-chw-container h2 {
+  text-align: center;
+  color: #033f15;
+  margin-bottom: 10px;
+}
+
+.register-chw-container p {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.register-chw-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.register-chw-container input {
+  padding: 12px 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.register-chw-container input:focus {
+  border-color: #033f15;
+  box-shadow: 0 0 5px rgba(10, 77, 98, 0.3);
+}
+
+.register-chw-container button {
+  padding: 12px;
+  font-size: 16px;
+  background-color: #033f15;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.register-chw-container button:hover {
+  background-color: #033f15;
+  transform: translateY(-2px);
+}
+
+.success-message {
+  text-align: center;
+  margin-top: 15px;
+  color: green;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .register-chw-container {
+    padding: 20px;
+    margin: 20px;
+  }
+  
+  .register-chw-container input, 
+  .register-chw-container button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}

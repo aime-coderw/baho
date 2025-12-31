@@ -1,0 +1,95 @@
+/* CHWPortal.css */
+
+.chw-portal-container {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f9fefe;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.chw-portal-container h2 {
+  color: #114618;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.chw-portal-container p {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.logout-btn {
+  display: block;
+  margin: 0 auto 25px auto;
+  padding: 10px 20px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.logout-btn:hover {
+  background-color: #c0392b;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+table th {
+  background-color: #114618;
+  color: white;
+}
+
+.whatsapp-btn {
+  padding: 6px 10px;
+  background-color: #25D366;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.whatsapp-btn:hover {
+  background-color: #1ebe57;
+}
+
+.doctor-btn {
+  background-color: #114618;
+}
+
+.doctor-btn:hover {
+  background-color: #114618;
+}
+
+@media (max-width: 768px) {
+  .chw-portal-container {
+    padding: 15px;
+    margin: 15px;
+  }
+
+  table th, table td {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .whatsapp-btn, .doctor-btn {
+    padding: 5px 8px;
+    font-size: 12px;
+  }
+}

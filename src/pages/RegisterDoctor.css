@@ -1,0 +1,97 @@
+/* RegisterDoctor.css */
+
+/* Overall container */
+.register-doctor-container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 40px;
+  background-color: #f9fefe; /* light professional background */
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+}
+
+/* Headings */
+.register-doctor-container h2 {
+  text-align: center;
+  color: #0e4621; /* professional teal color */
+  margin-bottom: 10px;
+}
+
+.register-doctor-container p {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Form layout */
+.register-doctor-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Input fields */
+.register-doctor-container input {
+  padding: 12px 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.register-doctor-container input:focus {
+  border-color: #145018;
+  box-shadow: 0 0 5px rgba(10, 77, 98, 0.3);
+}
+
+/* Submit (WhatsApp) button */
+.register-doctor-container button {
+  padding: 12px;
+  font-size: 16px;
+  background-color: #19542f; /* WhatsApp green */
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+}
+
+.register-doctor-container button:hover {
+  background-color: #18572e; /* slightly darker green on hover */
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Optional: add WhatsApp icon inside button using Unicode */
+.register-doctor-container button::before {
+  content: "💬";
+}
+
+/* Success message */
+.register-doctor-container .success-message {
+  text-align: center;
+  margin-top: 15px;
+  color: rgb(17, 70, 17);
+  font-weight: bold;
+}
+
+/* Responsive for small screens */
+@media (max-width: 600px) {
+  .register-doctor-container {
+    padding: 20px;
+    margin: 20px;
+  }
+  
+  .register-doctor-container input, 
+  .register-doctor-container button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}

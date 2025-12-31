@@ -1,0 +1,182 @@
+.chroniccare-container {
+  font-family: system-ui, sans-serif;
+}
+
+.chroniccare-hero {
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero-overlay {
+  background-color: rgba(0,0,0,0.5);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-text {
+  color: #fff;
+  text-align: center;
+}
+
+.chroniccare-services {
+  padding: 50px 20px;
+  text-align: center;
+  float: center;
+}
+.chroniccare-steps {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+
+.service-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 30px;
+  float: center;
+}
+
+.service-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.step-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  margin: 10px 0;
+}
+
+.steps-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.step-number {
+  font-size: 2rem;
+  font-weight: bold;
+  background-color: #e6f1e8;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  margin: 0 auto 10px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .service-cards, .steps-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .service-cards, .steps-cards {
+    grid-template-columns: 1fr;
+  }
+}
+/* CTA Section */
+.diagnostics-cta {
+  background-color: #f0faf2;
+  padding: 60px 20px;
+  border-radius: 15px;
+  margin: 50px 0;
+}
+
+.cta-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  gap: 40px;
+}
+
+.cta-text {
+  flex: 1;
+}
+
+.cta-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.cta-image img {
+  max-width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* Blog */
+.diagnostics-blog {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.blog-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.blog-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .service-cards, .steps-cards, .blog-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .service-cards, .steps-cards, .blog-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cta-image {
+    margin-top: 20px;
+  }
+}
+.secondary-btn {
+  background-color: #fff;
+  color: #093f03;
+  border: 2px solid #093f03;
+}
+
+.secondary-btn:hover {
+  background-color: #093f03;
+  color: #fff;
+}

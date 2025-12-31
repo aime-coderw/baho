@@ -7,7 +7,6 @@ export default function Navbar() {
   const [servicesOpen, setServicesOpen] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
-
   const dropdownRef = useRef(null);
 
   // Detect mobile screen
@@ -18,7 +17,7 @@ export default function Navbar() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  // Close dropdown if click outside (both mobile & desktop)
+  // Close dropdown if click outside
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
@@ -31,13 +30,14 @@ export default function Navbar() {
 
   return (
     <nav className="navbar">
+      {/* Logo */}
       <div className="nav-logo">
         <Link to="/">
           <img src={logo} alt="BAHO Logo" />
         </Link>
       </div>
 
-      {/* Hamburger */}
+      {/* Hamburger for mobile */}
       <div
         className={`hamburger ${menuOpen ? "open" : ""}`}
         onClick={() => setMenuOpen(!menuOpen)}
@@ -47,37 +47,45 @@ export default function Navbar() {
         <span className="bar"></span>
       </div>
 
-      {/* Nav Links */}
+      {/* Center links */}
       <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
-        <li><Link to="/">Home</Link></li>
+  <li><Link to="/">Home</Link></li>
 
-        <li
-          className="dropdown"
-          ref={dropdownRef}
-          onMouseEnter={() => !isMobile && setServicesOpen(true)}
-          onMouseLeave={() => !isMobile && setServicesOpen(true)} // persist open on hover
-        >
-          <span onClick={() => setServicesOpen(!servicesOpen)}>
-            Services ▾
-          </span>
+  <li className="dropdown" ref={dropdownRef}>
+    <span onClick={() => setServicesOpen(!servicesOpen)} className="mobile-dropdown-toggle">
+      Services ▾
+    </span>
+    <ul className={`dropdown-menu ${servicesOpen ? "open" : ""}`}>
+      <li><Link to="/telecare">TeleCare</Link></li>
+      <li><Link to="/pharmacy">e-Pharmacy</Link></li>
+      <li><Link to="/diagnostics">Diagnostics</Link></li>
+      <li><Link to="/chroniccare">ChronicCare</Link></li>
+      <li><Link to="/lifetrack">LifeTrack</Link></li>
+      <li><Link to="/mental">Mental Health</Link></li>
+      <li><Link to="/preventive">Preventive Programs</Link></li>
+      <li><Link to="/globalcare">GlobalCare</Link></li>
+      <li><Link to="/homecare">HomeCare</Link></li>
+    </ul>
+  </li>
 
-          <ul className={`dropdown-menu ${servicesOpen ? "open" : ""}`}>
-            <li><Link to="/telecare">TeleCare</Link></li>
-            <li><Link to="/pharmacy">e-Pharmacy</Link></li>
-            <li><Link to="/diagnostics">Diagnostics</Link></li>
-            <li><Link to="/chroniccare">ChronicCare</Link></li>
-            <li><Link to="/lifetrack">LifeTrack</Link></li>
-            <li><Link to="/mental">Mental Health</Link></li>
-            <li><Link to="/preventive">Preventive Programs</Link></li>
-            <li><Link to="/globalcare">GlobalCare</Link></li>
-          </ul>
-        </li>
+  <li><Link to="/about">About</Link></li>
+  <li><Link to="/contact">Contact Us</Link></li>
 
-        <li><Link to="/get-involved">Get Involved</Link></li>
-        <li><Link to="/patient-care">Patient Care</Link></li>
-        <li><Link to="/about">About</Link></li>
-        <li><Link to="/contact">Contact</Link></li>
-      </ul>
+  {/* 📱 Visible on mobile */}
+  <li className="portal-mobile">
+    <Link to="/doctors-portal" className="btn portal-btn">Doctors Portal</Link>
+  </li>
+  <li className="portal-mobile">
+    <Link to="/chws-portal" className="btn portal-btn">CHWs Portal</Link>
+  </li>
+</ul>
+
+{/* 💻 Desktop Only */}
+<div className="portal-buttons desktop-only">
+  <Link to="/doctors-portal" className="portal-btn">Doctors Portal</Link>
+  <Link to="/chws-portal" className="portal-btn">CHWs Portal</Link>
+</div>
+
     </nav>
   );
 }

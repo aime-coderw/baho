@@ -1,0 +1,67 @@
+/* Container for the login form */
+.admin-login {
+  background-color: #f9fafb; /* light background */
+  padding: 40px;
+  max-width: 400px;
+  margin: 80px auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Heading */
+.admin-login h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #064e3b; /* dark green professional */
+}
+
+/* Form styling */
+.admin-login form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Input fields */
+.admin-login input {
+  padding: 12px 15px;
+  border: 1px solid #d1d5db; /* light gray border */
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.admin-login input:focus {
+  border-color: #10b981; /* green accent */
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(16,185,129,0.2);
+}
+
+/* Button styling */
+.admin-login button {
+  padding: 12px;
+  background-color: #10b981; /* green button */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.admin-login button:disabled {
+  background-color: #6ee7b7; /* lighter green when disabled */
+  cursor: not-allowed;
+}
+
+.admin-login button:hover:not(:disabled) {
+  background-color: #059669; /* darker green on hover */
+}
+
+/* Error message */
+.admin-login p {
+  color: #dc2626; /* red */
+  text-align: center;
+  font-weight: 500;
+}

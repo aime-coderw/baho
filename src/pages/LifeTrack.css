@@ -1,0 +1,154 @@
+.lifetrack-container {
+  font-family: system-ui, sans-serif;
+  color: #0a0e1a;
+}
+
+/* HERO */
+.lifetrack-hero {
+  background-size: cover;
+  background-position: center;
+  min-height: 60vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.55);
+  width: 100%;
+  padding: 80px 20px;
+}
+.hero-text {
+  max-width: 650px;
+  color: #fff;
+}
+.hero-text h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+.hero-text p {
+  font-size: 1.1rem;
+  margin: 15px 0;
+}
+
+/* FEATURES */
+.lifetrack-features h2,
+.lifetrack-steps h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 25px;
+}
+.feature-cards,
+.steps-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  padding: 20px;
+}
+.feature-card,
+.step-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+  transition: 0.3s ease;
+}
+.feature-card:hover,
+.step-card:hover {
+  transform: translateY(-6px);
+}
+.step-number {
+  width: 38px;
+  height: 38px;
+  background: #0a6f43;
+  color: #fff;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+/* CTA */
+
+.primary-btn {
+  background: #0a6f43;
+  color: #fff;
+  padding: 12px 22px;
+  border-radius: 8px;
+  font-weight: 600;
+  display: inline-block;
+}
+.service-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.service-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .service-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* HomeCare CTA Section */
+.lifetrack-cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  background-color: #e8f4eb;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.lifetrack-cta .cta-image img {
+  max-width: 400px;
+  width: 100%;
+  border-radius: 12px;
+}
+
+.lifetrack-cta .cta-text {
+  max-width: 500px;
+}
+
+.lifetrack-cta .cta-text h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #093f03;
+}
+
+.lifetrack-cta .cta-text p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.lifetrack-cta .btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #093f03;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.lifetrack-cta .btn:hover {
+  background-color: #0d5605;
+}

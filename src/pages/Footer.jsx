@@ -7,7 +7,7 @@ export default function Footer() {
     <footer className="footer">
       <div className="footer-container">
 
-        {/* COLUMN 1 */}
+        {/* COLUMN 1 - BRAND */}
         <div className="footer-section">
           <h2 className="footer-logo">BAHO</h2>
           <p className="footer-text">
@@ -16,26 +16,29 @@ export default function Footer() {
           </p>
 
           <div className="footer-social">
-            <a href="#" aria-label="Facebook"><i className="fab fa-facebook"></i></a>
-            <a href="#" aria-label="Twitter"><i className="fab fa-twitter"></i></a>
-            <a href="#" aria-label="Instagram"><i className="fab fa-instagram"></i></a>
-            <a href="#" aria-label="LinkedIn"><i className="fab fa-linkedin"></i></a>
-          </div>
+  <a href="#" aria-label="https://www.facebook.com/profile.php?id=61585796972403"><i className="fab fa-facebook"></i></a>
+  <a href="https://x.com/BAHO_e_health24" aria-label="X (Twitter)"><i className="fab fa-x-twitter"></i></a>
+  <a href="https://www.instagram.com/baho_e_health_telemedicine24/?utm_source=qr&igsh=bGxhamI5MndobHcy" aria-label="Instagram"><i className="fab fa-instagram"></i></a>
+  <a href="https://www.linkedin.com/in/baho-e-health-platform-telemedicine-b768b43a3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" aria-label="LinkedIn"><i className="fab fa-linkedin"></i></a>
+  <a href="tiktok.com/@bahoe_health" aria-label="TikTok"><i className="fab fa-tiktok"></i></a>
+  <a href="https://youtube.com/@classiclifetoo?si=G-UmPFdVFYhBZrci" aria-label="YouTube"><i className="fab fa-youtube"></i></a>
+</div>
+
         </div>
 
-        {/* COLUMN 2 */}
+        {/* COLUMN 2 - QUICK LINKS */}
         <div className="footer-section">
           <h3>Quick Links</h3>
           <ul>
             <li><Link to="/">Home</Link></li>
-            <li><Link to="/patient-care">Patient Care</Link></li>
-            <li><Link to="/get-involved">Get Involved</Link></li>
+            <li><Link to="/doctors-portal">Doctors Portal</Link></li>
+            <li><Link to="/chws-portal">CHWs Portal</Link></li>
             <li><Link to="/about">About Us</Link></li>
             <li><Link to="/contact">Contact</Link></li>
           </ul>
         </div>
 
-        {/* COLUMN 3 */}
+        {/* COLUMN 3 - SERVICES */}
         <div className="footer-section">
           <h3>Services</h3>
           <ul>
@@ -48,16 +51,17 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* COLUMN 4 */}
+        {/* COLUMN 4 - CONTACT */}
         <div className="footer-section">
           <h3>Contact</h3>
-          <p>Email: support@baho.org</p>
-          <p>Phone: +250 788 000 000</p>
-          <p>Kigali, Rwanda</p>
+          <p><a href="mailto:support@baho.org">support@baho.org</a></p>
+          <p><a href="tel:+250793308820">+250 793 308 820</a></p>
+          <p><Link to="/contact">Kigali, Rwanda</Link></p>
         </div>
 
       </div>
 
+      {/* BOTTOM */}
       <div className="footer-bottom">
         <p>© {new Date().getFullYear()} BAHO Health. All Rights Reserved.</p>
       </div>

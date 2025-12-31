@@ -1,0 +1,76 @@
+.register-member-container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 40px;
+  background-color: #f9fefe;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+}
+
+.register-member-container h2 {
+  text-align: center;
+  color: #063407;
+  margin-bottom: 10px;
+}
+
+.register-member-container p {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.register-member-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.register-member-container input,
+.register-member-container select {
+  padding: 12px 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.register-member-container input:focus,
+.register-member-container select:focus {
+  border-color: #063407;
+  box-shadow: 0 0 5px rgba(10, 77, 98, 0.3);
+}
+
+.register-member-container button {
+  padding: 12px;
+  font-size: 16px;
+  background-color: #063407;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.register-member-container button:hover {
+  background-color: #063407;
+}
+
+.success-message {
+  text-align: center;
+  margin-top: 15px;
+  color: green;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .register-member-container {
+    padding: 20px;
+    margin: 20px;
+  }
+
+  .register-member-container input, 
+  .register-member-container select,
+  .register-member-container button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
