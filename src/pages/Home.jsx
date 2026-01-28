@@ -17,7 +17,9 @@ import PrivacyPic from "../assets/icons/lock.png";
 import Doctors from "../assets/icons/medical-assistance.png";
 import Security from "../assets/icons/security.png";
 import Feedback from "../assets/icons/feedback.png";
-import Profile from "../assets/icons/account.png";
+import Profile1 from "../assets/icons/pr1[1].jpg";
+import Profile2 from "../assets/icons/pr2[1].png";
+import Profile3 from "../assets/icons/pr3[1].jpg";
 import HeartHealth from "../assets/services/heart.png";
 import TeleCare from "./TeleCare";
 import MentalHealth from "./MentalHealth";
@@ -200,27 +202,27 @@ export default function Home() {
 
   <div className="testimony-cards">
     <div className="testimony-card">
-      <img src={Profile} alt="Patient Photo" className="patient-avatar"/>
+      <img src={Profile1} alt="Patient Photo" className="patient-avatar"/>
       <p className="feedback">"BAHO made my telemedicine experience so easy and professional. Highly recommended!"</p>
-      <h4 className="patient-name">– Aline M.</h4>
+      <h4 className="patient-name">– H. Blaise</h4>
       <div className="rating">
         <span>★ ★ ★ ★ ★</span>
       </div>
     </div>
 
     <div className="testimony-card">
-      <img src={Profile} alt="Patient Photo" className="patient-avatar"/>
+      <img src={Profile2} alt="Patient Photo" className="patient-avatar"/>
       <p className="feedback">"Quick, reliable, and professional healthcare. I feel safe using BAHO’s platform."</p>
-      <h4 className="patient-name">– Jean P.</h4>
+      <h4 className="patient-name">– P. David</h4>
       <div className="rating">
         <span>★ ★ ★ ★ ★</span>
       </div>
     </div>
 
     <div className="testimony-card">
-      <img src={Profile} alt="Patient Photo" className="patient-avatar"/>
+      <img src={Profile3} alt="Patient Photo" className="patient-avatar"/>
       <p className="feedback">"The doctors are knowledgeable and the platform is very user-friendly."</p>
-      <h4 className="patient-name">– Sarah K.</h4>
+      <h4 className="patient-name">– K. Christian</h4>
       <div className="rating">
         <span>★ ★ ★ ★ ★</span>
       </div>
