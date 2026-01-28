@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
-import logo from "../assets/nlog.png";
+import logo from "../assets/tlog.png";
 
 export default function Navbar() {
   const [servicesOpen, setServicesOpen] = useState(false);
