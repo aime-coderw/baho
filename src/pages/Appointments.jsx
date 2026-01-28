@@ -37,7 +37,7 @@ export default function Appointments() {
   const handleSubmit = (e) => {
     e.preventDefault();
     const whatsappMessage = `Hello, my name is ${formData.name}. I want to book an appointment for ${formData.service} - ${formData.subservice} on ${formData.date}. My phone: ${formData.phone}. Message: ${formData.message}`;
-    const whatsappUrl = `https://wa.me/250791231993?text=${encodeURIComponent(whatsappMessage)}`;
+    const whatsappUrl = `https://wa.me/250793308820?text=${encodeURIComponent(whatsappMessage)}`;
     window.open(whatsappUrl, "_blank");
   };
 
