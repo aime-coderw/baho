@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
-import logo from "../assets/baho.jpeg";
+import logo from "../assets/nlog.png";
 
 export default function Navbar() {
   const [servicesOpen, setServicesOpen] = useState(false);
@@ -31,11 +31,13 @@ export default function Navbar() {
   return (
     <nav className="navbar">
       {/* Logo */}
-      <div className="nav-logo">
-        <Link to="/">
-          <img src={logo} alt="BAHO Logo" />
-        </Link>
-      </div>
+     <div className="nav-logo">
+  <Link to="/" className="logo-wrap">
+    <img src={logo} alt="BAHO Logo" />
+    <span className="brand-text">TeleMedAfrica</span>
+  </Link>
+</div>
+
 
       {/* Hamburger for mobile */}
       <div
