@@ -31,7 +31,7 @@ export default function Navbar() {
   return (
     <nav className="navbar">
       {/* Logo */}
-     <div className="nav-logo">
+      <div className="nav-logo">
   <Link to="/" className="logo-wrap">
     <img src={logo} alt="BAHO Logo" />
     <span className="brand-text">TeleMedAfrica</span>
