@@ -16,7 +16,7 @@ export default function ContactUs() {
     e.preventDefault();
 
     const whatsappMessage = `Hello, my name is ${formData.name}.\nEmail: ${formData.email}\nMessage: ${formData.message}`;
-    const phoneNumber = "250791231993"; // WhatsApp number
+    const phoneNumber = "250793308820"; // WhatsApp number
     const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(whatsappMessage)}`;
 
     window.open(whatsappURL, "_blank");
