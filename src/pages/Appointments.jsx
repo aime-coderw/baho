@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "./Appointments.css";
 import Profile from "../assets/icons/account.png";
+import Profile1 from "../assets/services/prof1.jpg";
+import Profile2 from "../assets/services/prof3.jpg";
 
 export default function Appointments() {
   const [formData, setFormData] = useState({
@@ -24,6 +26,7 @@ export default function Appointments() {
     TeleCare: ["Virtual Consultations", "Follow-Up Calls", "Remote Monitoring"],
     ePharmacy: ["Prescription Refills", "Medicine Delivery", "Consult Pharmacist"],
     LifeTrack: ["Fitness Tracking", "Health Reports", "Chronic Disease Monitoring"],
+    "Dental Care": ["Teeth Cleaning", "Braces & Alignment", "Dental Procedures", "Routine Checkups"],
   };
 
   const handleChange = (e) => {
@@ -143,14 +146,14 @@ export default function Appointments() {
         <h2>What Patients Say</h2>
         <div className="testimonial-cards">
           <div className="testimonial-card">
-            <img src={Profile} alt="Patient Photo" className="patient-avatar"/>
+            <img src={Profile1} alt="Patient Photo" className="patient-avatar"/>
             <p>"Quick and professional. Loved the TeleCare experience!"</p>
-            <span>- Jane D.</span>
+            <span>- Blaise H.</span>
           </div>
           <div className="testimonial-card">
-            <img src={Profile} alt="Patient Photo" className="patient-avatar"/>
+            <img src={Profile2} alt="Patient Photo" className="patient-avatar"/>
             <p>"Medication delivered safely via ePharmacy. Highly recommend."</p>
-            <span>- Michael K.</span>
+            <span>- K. Christian</span>
           </div>
         </div>
       </section>

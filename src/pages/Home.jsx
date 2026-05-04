@@ -20,10 +20,14 @@ import Feedback from "../assets/icons/feedback.png";
 import Profile1 from "../assets/icons/pr1[1].jpg";
 import Profile2 from "../assets/icons/pr2[1].png";
 import Profile3 from "../assets/icons/pr3[1].jpg";
+import Profile1 from "../assets/services/prof1.jpg";
+import Profile2 from "../assets/services/prof2.png";
+import Profile3 from "../assets/services/prof3.jpg";
 import HeartHealth from "../assets/services/heart.png";
 import TeleCare from "./TeleCare";
 import MentalHealth from "./MentalHealth";
 import HomeCare from "../assets/services/homecare.jpg";
+import dentalImg from "../assets/services/dental.jpg";
 
 export default function Home() {
   const [projects, setProjects] = useState(0);
@@ -177,6 +181,7 @@ export default function Home() {
         <h2>Our Services</h2>
         <div className="service-cards">
           {[ 
+            {img: dentalImg, title: "Dental Care", desc: "Oral checkups, teeth cleaning, and advanced dental treatments.", link: "/dental"},
             {img: telecareImg, title: "TeleCare", desc: "Video consultations and online appointments.", link: "/telecare"},
             {img: pharmacyImg, title: "e-Pharmacy", desc: "Order prescriptions and chronic medication packs.", link: "/pharmacy"},
             {img: diagnosticsImg, title: "Diagnostics", desc: "Screening, lab tests, and preventive checkups.", link: "/diagnostics"},
@@ -186,6 +191,7 @@ export default function Home() {
             {img: preventiveImg, title: "Preventive Programs", desc: "Fitness, nutrition & lifestyle coaching.", link: "/preventive"},
             {img: globalcareImg, title: "GlobalCare", desc: "Medical tourism and international referrals.", link: "/globalcare"},
             {img: HomeCare, title: "HomeCare", desc: "Receive medical support and diagnosis at your home.", link: "/homecare"},
+            
           ].map((service, i) => (
             <div key={i} className="service-card">
               <img src={service.img} alt={service.title} className="service-image" />
@@ -204,7 +210,7 @@ export default function Home() {
     <div className="testimony-card">
       <img src={Profile1} alt="Patient Photo" className="patient-avatar"/>
       <p className="feedback">"BAHO made my telemedicine experience so easy and professional. Highly recommended!"</p>
-      <h4 className="patient-name">– H. Blaise</h4>
+      <h4 className="patient-name">– Blaise H.</h4>
       <div className="rating">
         <span>★ ★ ★ ★ ★</span>
       </div>
@@ -213,7 +219,7 @@ export default function Home() {
     <div className="testimony-card">
       <img src={Profile2} alt="Patient Photo" className="patient-avatar"/>
       <p className="feedback">"Quick, reliable, and professional healthcare. I feel safe using BAHO’s platform."</p>
-      <h4 className="patient-name">– P. David</h4>
+      <h4 className="patient-name">–P. David</h4>
       <div className="rating">
         <span>★ ★ ★ ★ ★</span>
       </div>

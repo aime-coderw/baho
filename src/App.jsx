@@ -31,6 +31,7 @@ import MembersPortal from "./pages/MembersPortal";
 import BlogPage from "./pages/BlogPage";
 import BlogDetail from "./pages/BlogDetail";
 import NewPost from "./pages/NewPost";
+import DentalCare from "./pages/DentalCare";
 
 
 export default function App() {
@@ -67,6 +68,7 @@ export default function App() {
         <Route path="/admin" element={<AdminPanel />} />
         <Route path="/get-involved" element={<GetInvolved />} />
         <Route path="/" element={<Home />} />
+        <Route path="/dental" element={<DentalCare />} />
       </Routes>
       <Footer />
     </>
