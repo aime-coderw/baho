@@ -59,7 +59,7 @@ export default function Navbar() {
     </span>
     <ul className={`dropdown-menu ${servicesOpen ? "open" : ""}`}>
       <li><Link to="/telecare">TeleCare</Link></li>
-      <li><Link to="/dentalcare">DentalCare</Link></li>
+      <li><Link to="/dental">DentalCare</Link></li>
       <li><Link to="/pharmacy">e-Pharmacy</Link></li>
       <li><Link to="/diagnostics">Diagnostics</Link></li>
       <li><Link to="/chroniccare">ChronicCare</Link></li>
